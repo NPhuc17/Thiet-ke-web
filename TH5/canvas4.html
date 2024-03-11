@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="mycanvas" width="200" height="200" style="border: 1px solid black;"></canvas>
+
+    <script>
+        var c=document.getElementById("mycanvas");
+        var ctx=c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(100,100,80,0,0.5*Math.PI);
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.arc(100,100,80,1*Math.PI,1.5*Math.PI);
+        ctx.stroke();
+
+        var ctx=c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(100,100,60,0,0.5*Math.PI);
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.arc(100,100,60,1*Math.PI,1.5*Math.PI);
+        ctx.stroke();
+
+        var ctx=c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(100,100,40,0,0.5*Math.PI);
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.arc(100,100,40,1*Math.PI,1.5*Math.PI);
+        ctx.stroke();
+
+        var ctx=c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(100,100,20,0,0.5*Math.PI);
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.arc(100,100,20,1*Math.PI,1.5*Math.PI);
+        ctx.stroke();
+    </script>
+</body>
+</html>

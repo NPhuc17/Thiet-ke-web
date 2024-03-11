@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="mycanvas" width="400" height="220" style="border: 1px solid black;"></canvas>
+
+    <script>
+        var c=document.getElementById("mycanvas");
+        var ctx=c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(200,100,70,0,2*Math.PI);
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+
+        ctx.moveTo(200,30);
+        ctx.lineTo(200,170);
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+
+        ctx.moveTo(200,110);
+        ctx.lineTo(130,110);
+        ctx.lineTo(400-130,110);
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth="5";
+        ctx.stroke();
+        //ngang tren
+        ctx.moveTo(200,90);
+        ctx.lineTo(130,90);
+        ctx.lineTo(400-130,90);
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+        ctx.moveTo(200,70);
+        ctx.lineTo(135,70);
+        ctx.lineTo(400-135,70);
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+        ctx.moveTo(200,50);
+        ctx.lineTo(150,50);
+        ctx.lineTo(400-150,50);
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth="5";
+        ctx.stroke();
+        //ngang duoi
+        ctx.moveTo(200,220-90);
+        ctx.lineTo(135,220-90);
+        ctx.lineTo(400-135,220-90);
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+        ctx.moveTo(200,220-70);
+        ctx.lineTo(150,220-70);
+        ctx.lineTo(400-150,220-70);
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.arc(200,100,90,1.*Math.PI,1.5*Math.PI);
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(200,100,110,1.*Math.PI,1.5*Math.PI);
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(200,100,90,1.6*Math.PI,2*Math.PI);
+        ctx.strokeStyle = "gray";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(200,100,110,1.6*Math.PI,2*Math.PI);
+        ctx.strokeStyle = "gray";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(200,100,130,1.6*Math.PI,2*Math.PI);
+        ctx.strokeStyle = "gray";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(200,100,150,1.6*Math.PI,2*Math.PI);
+        ctx.strokeStyle = "gray";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(200,100,170,1.6*Math.PI,2*Math.PI);
+        ctx.strokeStyle = "gray";
+        ctx.lineWidth="5";
+        ctx.stroke();
+
+
+        ctx.font="40px Arial";
+        ctx.fillText("GLOBAl 2021",100,205);
+       
+    </script>
+</body>
+</html>
