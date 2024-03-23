@@ -1,0 +1,21 @@
+#flex-center{
+    display: flex;flex-direction: column;align-items: center;
+}
+.hinh1{
+    background-color: wheat; border: 3px solid blue; border-radius: 10px; width: 50%;
+}
+.hinh2{
+    background: url(https://th.bing.com/th/id/OIP.rXZQ3cKg7FfLedSozyhURwHaE8?rs=1&pid=ImgDetMain); border: 3px solid blue; border-radius: 10px; width: 25%; margin-top: 1rem;
+}
+.hinh1 h4{
+    text-align: center; font-weight: 600; text-transform: uppercase; font-size: 2rem; color: brown; margin: 0;
+}
+.hinh2 h4{
+    text-align: center; font-weight: 600; text-transform: uppercase; font-size: 2rem; color: yellow; margin: 0;
+}
+.hinh1 p{
+    margin: 1rem; text-align: justify;text-indent: 2rem;
+}
+.hinh2 p{
+    margin: 1rem; text-align: justify;text-indent: 2rem; color: azure;
+}
