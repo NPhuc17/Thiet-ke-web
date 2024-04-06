@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+        
+        padding: 0;
+        margin: 0;
+  
+    }
+    li{
+        position: relative;
+    }
+    a {
+        text-decoration: none;
+        line-height: 50px;
+        color: white;
+        background-color: #00F;
+        display: block;
+    }
+    .level1{
+        
+        display: flex;
+        width: 90%;
+    }
+    .level2 a{
+        background-color: #90F;
+        width: 200px;
+    }
+    .level2 {
+
+        position: absolute;
+        top: 100%;
+        display: none;
+       
+    }
+    .level3{
+        position: absolute;
+        top: 0;
+        left: 100%;
+        display: none;
+    }
+    li:hover > a{
+        background-color: #0CF;
+    }
+     li:hover > ul {
+        display: block;
+        
+    }
+
+</style>
+<body>
+    <ul class="level1">
+        <li><a href="#">gioi thieu</a>
+            <ul class="level2">
+                <li><a href="#">lich su phat trien</a></li>
+                <li><a href="#">tam nhin - su dung</a></li>
+                <li><a href="#">bo may - to chuc</a></li>
+                <li><a href="#">ba cong khai</a></li>
+            </ul>
+        </li>
+        <li><a href="#">hufi 35 nam</a></li>
+        <li><a href="#">dao tao</a>
+            <ul class="level2">
+                <li><a href="#">cac trinh dao tao</a></li>
+                <li><a href="#">chuong trinh dao tao</a>
+                    <ul class="level3">
+                        <li><a href="#">sau dai hoc</a></li>
+                        <li><a href="#">dai hoc</a></li>
+                        <li><a href="#">dai hoc LT tu CD</a></li>
+                        <li><a href="#">Cao dang</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">dao tao quoc te</a>
+                    <ul class="level3">
+                        <li><a href="#">chuong trinh 2 + 2</a></li>
+                        <li><a href="#">chuong trinh 4 + 0</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">de an mo nganh moi</a></li>
+            </ul>
+        </li>
+        <li><a href="#">tuyen sinh</a></li>
+        <li><a href="#">giang vien</a></li>
+        <li><a href="#">sinh vien</a></li>
+        <li><a href="#">nghien cuu khoa hoc</a></li>
+        <li><a href="#">tap chi khoa hoc</a></li>
+    </ul>
+</body>
+
+</html>

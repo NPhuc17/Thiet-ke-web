@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+        width: 150px;
+        padding: 0;
+        margin: 0;
+  
+    }
+    li{
+        position: relative;
+    }
+    a {
+        text-decoration: none;
+        line-height: 50px;
+        color: white;
+        margin-left: 5px;
+        border-bottom: 3px solid #fff;
+        background-color: black;
+        display: block;
+      
+    }
+    .level1{
+        margin: 20px 0;
+        width: 150px;
+    }
+    .level2 a{
+
+        width: 150px;
+    }
+    .level2,
+    .level3 {
+
+        position: absolute;
+        top: 0;
+        left: 100%;
+        display: none;
+    }
+    li:hover > a{
+        background-color: #c00a0a;
+    }
+     li:hover > ul {
+        display: block;
+        
+    }
+
+</style>
+
+<body>
+    <ul class="level1">
+        <li><a href="#">Trang chu</a></li>
+        <li><a href="#">Dien dan</a>
+            <ul class="level2">
+                <li><a href="#">Sinh vien HUFI</a></li>
+                <li><a href="#">Sinh vien CNTT</a>
+                    <ul class="level3">
+                        <li><a href="#">Khoa 12DHTH</a></li>
+                        <li><a href="#">Khoa 13DHTH</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Tin tuc</a></li>
+        <li><a href="#">Hoi dap</a></li>
+        <li><a href="#">Lien he</a></li>
+    </ul>
+</body>
+
+</html>
