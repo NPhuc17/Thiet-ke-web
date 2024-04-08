@@ -6,32 +6,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #main {
+        margin: 0 auto;
+        padding: 0;
+
+
+    }
+
+    #head {
+        border: 5px solid #811010;
+        height: 20vh;
+        background-color: #b6ff00;
+    }
+
+    #head-link {
+        height: 5vh;
+        line-height: 30px;
+        padding: 0 10px;
+        border: 5px solid #811010;
+
+        margin-bottom: 5px;
+        clear: both;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #left {
+        width: 15%;
+        min-height: 70vh;
+        border: 5px solid #811010;
+
+        float: left;
+        margin-bottom: 5px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        text-transform: uppercase;
+    }
+
+    #right {
+        width: 15%;
+        min-height: 70vh;
+        border: 5px solid #811010;
+
+        float: right;
+        margin-bottom: 5px;
+
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer {
+        height: 5vh;
+        clear: both;
+        border: 5px solid #811010;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #panel {
+        width: 70%;
+        min-height: 70vh;
+        float: left;
+    }
+
+    .main-panel {
+        width: 100%;
+        min-height: 35vh;
+        border: 5px solid #811010;
+    }
+
+    .main-panel-footer {
+        width: 100%;
+        min-height: 35vh;
+        border: 5px solid #811010;
+        margin-bottom: 5px;
+       
+    }
+
+    img {
+        width: 20%;
+        height: 10%;
+    }
+
+    .contene {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+    .main-panel p{
+        margin-left: 0.5rem;
+    }
+    .main-panel-footer p{
+        margin-right: 0.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+</style>
 
 <body>
-    <header>
-        <p>welcome to my homepage</p>
-        <p>Use the menu to select diffrence style sheets</p>
-    </header>
+    <div id="main">
+        <div id="head">
+            <h3> welcome to my hompage</h3>
+            <p>Use the menu to select difference stylesheets</p>
+        </div>
+        <!-- <div id="head-link">head-link</div> -->
+        <div id="left">
+            <ul>
+                <li>home</li>
+                <li>news</li>
+                <li>service</li>
+                <li>recuitment</li>
+                <li>contact us</li>
+            </ul>
+        </div>
+        <div id="panel">
 
-    <menu>
-        <ul>
-            <li><a href="">home</a></li>
-            <li><a href="">news</a></li>
-            <li><a href="">services</a></li>
-            <li><a href="">recuitment</a></li>
-            <li><a href="">contact us</a></li>
-        </ul>
-    </menu>
+            <div class="main-panel">
+                <h3>same diffrence style sheets</h3>
+                <div class="contene">
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/230712115127-white-tailed-deer-file.jpg?c=16x9&q=h_833,w_1480,c_fill"
+                        alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore natus optio corporis repellendus
+                        laboriosam
+                        reiciendis perferendis, nesciunt molestias sed, tenetur asperiores accusantium nisi quas
+                        expedita
+                        nihil eos
+                        fuga mollitia dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sed
+                        quam,
+                        a id
+                        fugiat quidem labore provident quisquam, est ex ullam cupiditate officia quis sequi debitis
+                        eveniet
+                        dolore
+                        qui voluptas! lo</p>
 
-    <div class="center">
-        <h3>same diffrence style sheets</h3>
-        <img src="https://media.cnn.com/api/v1/images/stellar/prod/230712115127-white-tailed-deer-file.jpg?c=16x9&q=h_833,w_1480,c_fill"
-            alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore natus optio corporis repellendus laboriosam
-            reiciendis perferendis, nesciunt molestias sed, tenetur asperiores accusantium nisi quas expedita nihil eos
-            fuga mollitia dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sed quam, a id
-            fugiat quidem labore provident quisquam, est ex ullam cupiditate officia quis sequi debitis eveniet dolore
-            qui voluptas! lo</p>
+                </div>
+            </div>
+            <div class="main-panel-footer">
+                <h3>no style</h3>
+                <div class="contene">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore natus optio corporis repellendus
+                        laboriosam
+                        reiciendis perferendis, nesciunt molestias sed, tenetur asperiores accusantium nisi quas
+                        expedita
+                        nihil eos
+                        fuga mollitia dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sed
+                        quam,
+                        a id
+                        fugiat quidem labore provident quisquam, est ex ullam cupiditate officia quis sequi debitis
+                        eveniet
+                        dolore
+                        qui voluptas! lo</p>
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/230712115127-white-tailed-deer-file.jpg?c=16x9&q=h_833,w_1480,c_fill"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div id="right">right</div>
+        <div id="footer">footer</div>
     </div>
 </body>
 
