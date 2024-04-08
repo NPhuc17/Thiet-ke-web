@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(10, 0.1fr);
+        grid-template-rows: repeat(5, 0.1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+        background-color: #2196F3;
+        padding: 10px;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 11;
+    }
+
+    .div2 {
+        grid-area: 2 / 1 / 3 / 11;
+    }
+
+    .div3 {
+        grid-area: 5 / 1 / 6 / 11;
+    }
+
+    .div4 {
+        grid-area: 3 / 1 / 5 / 4;
+    }
+
+    .div5 {
+        grid-area: 3 / 8 / 5 / 11;
+    }
+
+    .div6 {
+        grid-area: 3 / 4 / 4 / 8;
+    }
+
+    .div7 {
+        grid-area: 4 / 4 / 5 / 8;
+    }
+
+    .parent>div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="div1">Header</div>
+        <div class="div2">Link</div>
+        <div class="div3">Footer</div>
+        <div class="div4">Menu</div>
+        <div class="div5">Right</div>
+        <div class="div6">
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            
+        </div>
+        <div class="div7">Subfooter</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(9, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+       
+        padding: 10px;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 10;
+        background-color: green;
+        color: white;
+        padding: 1rem;
+    }
+
+    .div2 {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .div3 {
+        grid-area: 2 / 3 / 3 / 8;
+    }
+
+    .div4 {
+        grid-area: 2 / 8 / 3 / 10;
+        background-color: #2196F3;
+        color: white;
+    }
+    #right{
+        margin: 1rem;
+        text-align: justify;
+    }
+    #right h3{
+        margin: 2rem 0;
+    }
+    .div5 {
+        grid-area: 3 / 1 / 4 / 10;
+        background-color: grey;
+        text-align: center;
+    }
+
+    .parent>div {
+        /* background-color: rgba(255, 255, 255, 0.8); */
+        /* text-align: center;
+        padding: 20px 0; */
+        font-size: 30px;
+    }
+
+    img {
+        width: 20%;
+        height: 10%;
+    }
+
+    .contene {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+    .main-panel h3{
+        font-size: 3rem;
+    }
+    .main-panel p {
+        margin-left: 0.5rem;
+    }
+
+    .main-panel-footer p {
+        margin-right: 0.5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        text-transform: uppercase;
+        background-color: antiquewhite;
+    }
+
+    li:hover {
+        background-color: green;
+        color: white;
+    }
+    img {
+        width: 20%;
+        height: 10%;
+    }
+
+    .contene {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+    .main-panel p{
+        margin-left: 0.5rem;
+    }
+    .main-panel-footer p{
+        margin-right: 0.5rem;
+    }
+    .stylesheet{
+        display: flex;
+    }
+    .stylesheet a{
+        margin: 0.5rem;
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="div1">
+            <div id="head">
+                <h3> welcome to my hompage</h3>
+                <p>Use the menu to select difference stylesheets</p>
+            </div>
+        </div>
+        <div class="div2">
+            <div id="left">
+                <ul>
+                    <li>home</li>
+                    <li>news</li>
+                    <li>service</li>
+                    <li>recuitment</li>
+                    <li>contact us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="main-panel">
+                <h3>same diffrence style sheets</h3>
+                <div class="contene">
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/230712115127-white-tailed-deer-file.jpg?c=16x9&q=h_833,w_1480,c_fill"
+                        alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore natus optio corporis repellendus
+                        laboriosam
+                        reiciendis perferendis, nesciunt molestias sed, tenetur asperiores accusantium nisi quas
+                        expedita
+                        nihil eos
+                        fuga mollitia dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sed
+                        quam,
+                        a id
+                        fugiat quidem labore provident quisquam, est ex ullam cupiditate officia quis sequi debitis
+                        eveniet
+                        dolore
+                        qui voluptas! lo</p>
+                </div>
+                <div class="stylesheet">
+                    <a href="#">stylesheet1</a>
+                    <a href="#">stylesheet2</a>
+                    <a href="#">stylesheet3</a>
+                </div>
+            </div>
+            <div class="main-panel-footer">
+                <h3>no style</h3>
+                <div class="contene">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore natus optio corporis repellendus
+                        laboriosam
+                        reiciendis perferendis, nesciunt molestias sed, tenetur asperiores accusantium nisi quas
+                        expedita
+                        nihil eos
+                        fuga mollitia dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sed
+                        quam,
+                        a id
+                        fugiat quidem labore provident quisquam, est ex ullam cupiditate officia quis sequi debitis
+                        eveniet
+                        dolore
+                        qui voluptas! lo</p>
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/230712115127-white-tailed-deer-file.jpg?c=16x9&q=h_833,w_1480,c_fill"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="div4">
+            <div id="right">
+                <h3>side bar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nostrum, a earum dolor quam neque
+                    quod magnam unde! Cupiditate quae iste tenetur maiores ab ipsum? Sapiente ullam recusandae delectus
+                    neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatibus laboriosam
+                    atque quod consequuntur, a rem mollitia laudantium animi repellendus ex assumenda, dolorem commodi
+                    eaque natus, error doloremque tempora. Nihil.</p>
+            </div>
+        </div>
+        <div class="div5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nostrum, a earum dolor quam
+            neque
+            quod magnam unde! Cupiditate quae iste tenetur maiores ab ipsum? Sapiente ullam recusandae delectus
+            neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatibus laboriosam
+            atque quod consequuntur, a rem mollitia laudantium animi repellendus ex assumenda, dolorem commodi
+            eaque natus, error doloremque tempora. a sfdfd dgsfrt gdf</div>
+    </div>
+</body>
+
+</html>
